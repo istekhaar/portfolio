@@ -1,0 +1,125 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background: #4A90E2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.name-logo {
+    display: flex;
+    align-items: center;
+}
+
+.log img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.list ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.list li {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.list li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.list li a:hover {
+    text-decoration: underline;
+}
+
+.mainHeading h1 {
+    margin: 20px 0 5px;
+    font-size: 2.5rem;
+}
+
+.mainHeading h3 {
+    font-weight: 300;
+    margin: 0;
+}
+
+/* Main Section */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+.leftBox, .middel, .rightSection {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+/* Footer Section */
+footer {
+    background: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer .box {
+    margin: 20px 0;
+    padding: 20px;
+    background: #4A90E2;
+    border-radius: 8px;
+}
+
+.footer p {
+    margin: 20px 0 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .list ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
